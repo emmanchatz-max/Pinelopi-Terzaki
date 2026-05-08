@@ -78,17 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mobile Menu (Simple implementation)
+    // Mobile Menu
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
     
     if (mobileBtn) {
         mobileBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             mobileBtn.classList.toggle('active');
-            
-            // Create mobile nav styles on the fly if needed or toggle a class
-            // For now, let's just toggle visibility if we add styles for it
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileBtn.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
         });
     }
 
