@@ -922,14 +922,19 @@ footer {
 
     /* Navbar Mobile Refinement */
     header {
-        width: 92%;
+        width: 94%;
         top: 15px;
-        padding: 10px 20px;
+        padding: 14px 24px;
     }
 
     header.navbar-scrolled {
-        width: 95%;
+        width: 96%;
         top: 10px;
+        padding: 12px 24px;
+    }
+
+    .logo a {
+        font-size: 1.4rem;
     }
 
     .nav-links {
@@ -960,7 +965,7 @@ footer {
     .mobile-menu-btn {
         display: flex;
         z-index: 1001;
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
     .nav-cta { 
@@ -969,8 +974,8 @@ footer {
     }
 
     .nav-cta .btn {
-        padding: 8px 16px;
-        font-size: 0.7rem;
+        padding: 10px 20px;
+        font-size: 0.75rem;
         letter-spacing: 0.5px;
         white-space: nowrap;
     }
@@ -1051,17 +1056,27 @@ footer {
 }
 
 @media (max-width: 480px) {
+    header {
+        width: 96%;
+        padding: 12px 18px;
+    }
+
+    header.navbar-scrolled {
+        width: 98%;
+        padding: 10px 18px;
+    }
+
     .hero h1 { font-size: 2.5rem; }
     
-    .logo a { font-size: 1.3rem; }
+    .logo a { font-size: 1.2rem; }
 
     .nav-cta .btn {
-        padding: 6px 12px;
+        padding: 8px 14px;
         font-size: 0.65rem;
     }
 
     .mobile-menu-btn {
-        margin-left: 10px;
+        margin-left: 12px;
     }
 
     .service-card {
