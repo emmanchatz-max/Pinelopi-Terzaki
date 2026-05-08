@@ -19,9 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
+                
+                // If it's an image container, also activate the reveal effect
+                if (entry.target.classList.contains('reveal-image-container')) {
+                    entry.target.classList.add('active');
+                }
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.15 });
 
     revealItems.forEach(item => revealObserver.observe(item));
 
