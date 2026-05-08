@@ -922,19 +922,19 @@ footer {
 
     /* Navbar Mobile Refinement */
     header {
-        width: 94%;
+        width: 90%;
         top: 15px;
-        padding: 14px 24px;
+        padding: 12px 20px;
     }
 
     header.navbar-scrolled {
-        width: 96%;
+        width: 92%;
         top: 10px;
-        padding: 12px 24px;
+        padding: 10px 20px;
     }
 
     .logo a {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .nav-links {
@@ -965,7 +965,7 @@ footer {
     .mobile-menu-btn {
         display: flex;
         z-index: 1001;
-        margin-left: 20px;
+        margin-left: 25px; /* Increased horizontal padding */
     }
 
     .nav-cta { 
@@ -974,47 +974,53 @@ footer {
     }
 
     .nav-cta .btn {
-        padding: 10px 20px;
-        font-size: 0.75rem;
+        padding: 8px 16px;
+        font-size: 0.7rem;
         letter-spacing: 0.5px;
         white-space: nowrap;
     }
 
-    /* Hero Mobile */
+    /* Hero Mobile Redesign */
     .hero {
         text-align: center;
-        padding-top: 80px;
+        padding-top: 100px; /* Increased top breathing room */
+        height: auto;
+        min-height: 100vh;
     }
 
     .hero-text-wrapper {
-        padding: 30px 20px;
-        background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+        padding: 40px 25px;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        backdrop-filter: blur(4px);
+        margin: 0 15px;
     }
 
     .hero h1 { 
-        font-size: 3rem; 
+        font-size: 2.6rem; /* Slightly reduced for better balance */
         letter-spacing: -1px; 
-        line-height: 1.1;
+        line-height: 1.15;
+        margin-bottom: 20px;
     }
 
     .hero p { 
-        font-size: 0.85rem; 
-        letter-spacing: 1px; 
-        margin: 0 auto 30px;
-        max-width: 100%;
+        font-size: 0.8rem; /* Slightly reduced */
+        letter-spacing: 1.5px; 
+        margin: 0 auto 35px;
+        max-width: 280px; /* Reduced width for better line count */
+        line-height: 1.6;
     }
 
     .hero-btns {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
         width: 100%;
-        max-width: 300px;
+        max-width: 240px; /* More compact buttons */
         margin: 0 auto;
     }
 
     .btn {
         width: 100%;
-        padding: 16px 30px;
+        padding: 14px 25px; /* More compact button padding */
     }
 
     /* Sections Mobile */
